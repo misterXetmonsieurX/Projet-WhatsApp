@@ -1,0 +1,49 @@
+.parametres{
+    background-color: var(--whatsapp-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+}
+.parametres_list{
+    height: calc(100% - 120px);
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.parametres_list > div:nth-child(1){
+    height: 100px;
+    padding: 0 20px;
+}
+
+.parametres_list .profile_image{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+}
+
+.parametres_list .profil-info h5{
+    font-size: 1rem;
+}
+
+.parametres_list .profil-info p{
+    font-size: .77rem;
+    color: var(--whatsapp-gray);
+}
+
+.parametres_list .pro_info{
+    background-color: var(--whatsapp-white);
+    padding: 12px 20px;
+}
+
+.parametres_list .pro_info:hover{
+    background-color: var(--whatsapp-gray-bg);
+    cursor: pointer;
+}
+
+.parametres_list .pro_info:not(:last-child){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}

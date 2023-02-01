@@ -1,0 +1,52 @@
+.etiquettes{
+    background-color: var(--whatsapp-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+}
+
+.etiquettes .new_discussion{
+    transform: translateX(0%);
+}
+
+.etiquettes .contacts_list_item:nth-child(1) .contacts_list_item_pict{
+    background-color: #67C3FB;
+}
+
+.etiquettes .contacts_list_item:nth-child(2) .contacts_list_item_pict{
+    background-color: #FED42A;
+}
+
+.etiquettes .contacts_list_item:nth-child(3) .contacts_list_item_pict{
+    background-color: #FE9486;
+}
+
+.etiquettes .contacts_list_item:nth-child(4) .contacts_list_item_pict{
+    background-color: #DFAEEF;
+}
+
+.etiquettes .contacts_list_item:nth-child(5) .contacts_list_item_pict{
+    background-color: #55CCB2;
+}
+
+.etiquettes .contacts_list{
+    height: calc(100% - 120px);
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.etiquettes .contacts_list_item_pict{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etiquettes .contacts_list_item_pict img{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}

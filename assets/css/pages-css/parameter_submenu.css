@@ -1,0 +1,28 @@
+.elipsis_submenu{
+    top: 60px;
+    right: 0px;
+    background-color: var(--whatsapp-white);
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0;
+    display: none;
+    transition: .5s ease-in-out;
+}
+.showElipsis{
+    top: 40px;
+    opacity: 1;
+    display: block;
+}
+
+.elipsis_submenu ul li{
+    padding: 5px 20px;
+}
+.elipsis_submenu ul li a{
+    white-space: nowrap;
+    display: block;
+    padding: 5px;
+    font-size: .8rem;
+}
+.elipsis_submenu ul li:hover{
+   background-color: var(--whatsapp-gray-bg);
+}
