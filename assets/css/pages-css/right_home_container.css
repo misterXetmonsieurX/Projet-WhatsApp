@@ -57,11 +57,13 @@
 .left_message, .right_message{
     display: flex;
     margin: 5px 0;
+    min-width: 100%;
 }
 
 .right_message{
     justify-content: end;
 }
+
 
 .left_message p, .right_message p{
     font-size: .9rem;
@@ -71,6 +73,7 @@
 
 .message_container{
     display: inline-block;
+    width: 65%;
     max-width: 65%;
     position: relative;
 }
@@ -160,4 +163,19 @@
     outline: none;
     border: none;
     font-size: 1.1rem;
+}
+
+@media screen and (max-width:880px){
+    
+    .right_home_body{
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .message_container{
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }

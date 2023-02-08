@@ -201,8 +201,6 @@ body{
     color: var(--whatsapp-black);
     width: 80%;
     white-space: nowrap;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
 }
 
 .discussion_user_name .discussion_user_details{
@@ -248,3 +246,18 @@ body{
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .discussion_user_name{
+        display: none;
+    }
+
+    .left_home_container .left_home_head .user_profile_pict{
+        width: 30px;
+        height: 30px;
+    }
+}
