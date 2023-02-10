@@ -23,6 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(var(--whatsapp-green) 0%, var(--whatsapp-green) 15%, var(--whatsapp-light-bg) 15%, var(--whatsapp-light-bg) 100%);
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -35,10 +36,19 @@ body{
     overflow: hidden;
 }
 
+.content_left{
+    width: 30%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
 .left_home_container{
     background-color: var(--whatsapp-white);
-    width: 30%;
+    height: 100%;
     border-right: 1px solid #10202533;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
 }
 
 .left_home_container .left_home_wrapper{
@@ -246,18 +256,32 @@ body{
     margin: 0 auto;
 }
 
+@media screen and (max-width: 880px){
+    .content_left{
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 768px){
-    .container{
+    .content_left{
         width: 100%;
-        max-width: 100%;
+       transition: all .5s;
+    }
+    
+    .discussion_user_name h6{
+        width: 100%;
+    }
+    
+    .discussion_user_name .message_text{
+        width: 100%;
     }
 
-    .discussion_user_name{
-        display: none;
+    .right_home_wrapper .mobile_menu_icon{
+        display: flex;
     }
 
     .left_home_container .left_home_head .user_profile_pict{
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
 }
